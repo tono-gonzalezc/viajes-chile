@@ -9,3 +9,10 @@
 main {
     font-family: 'cabin', sans-serif;
 }
+
+
+/*Footer*/
+
+.piePagina {
+    display: inline-block;
+}
