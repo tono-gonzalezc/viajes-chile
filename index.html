@@ -38,9 +38,9 @@
 
                   <!--No olvidar ingresar links-->
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link active" href="#">Quienes Somos</a>
-                  <a class="nav-link active" href="#">Destacados</a>
-                  <a class="nav-link active" href="#">Contacto</a>
+                  <a class="nav-link active" href="#quienesomos">Quienes Somos</a>
+                  <a class="nav-link active" href="#destacados">Destacados</a>
+                  <a class="nav-link active" href="#contacto">Contacto</a>
                 </div>
               </div>
               </div>
@@ -78,7 +78,7 @@
         
         <div class="container text-light px-5 py-5">
             <!-- Quienes Somos -->
-            <h2 class=" text-center">¿QUIENES SOMOS?</h2>
+            <h2 class=" text-center" id="quienesomos">¿QUIENES SOMOS?</h2>
             <hr>
             <div class="row text-center py-5">
               <div class="col">
@@ -112,7 +112,7 @@
 
             <!-- Destacados -->
             <div class="container">
-              <h2 class="text-center">DESTACADOS</h2>
+              <h2 class="text-center" id="destacados">DESTACADOS</h2>
               <div class="row py-5">
                 <div class="col-sm-12 col-md-3">
                   <div class="card bg-info">
@@ -156,7 +156,7 @@
             </div>
 
             <!-- Contacto -->
-            <h2 class=" text-center">CONTACTO</h2>
+            <h2 class=" text-center" id="contacto">CONTACTO</h2>
             <div class="row">
               <div class="col">
                 <div class="mb-3">
@@ -171,14 +171,37 @@
                     <label for="exampleFormControlTextarea1" class="form-label text-start">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <!-- Botón enviar con modal-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Enviar
+                </button>
+
+                <!-- Modal que aparece al hacer click en enviar -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Formulario de contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        <p>Mensaje enviado correctamente, te contactaremos a la brevedad.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>
     </main>
 
     <!--Footer-->
-    <footer class="bg-info text-light px-5 py-4">
+    <footer class="bg-info text-light px-5 pt-4">
 <!-- 
                 <p class="piePagina">VIAJES CHILE</p>
                 <section class="text-end piePagina ps-5">
@@ -189,14 +212,14 @@
                 </section>
 -->
                 <div class="container">
-                  <div class="row px-4">
+                  <div class="row px-4 fs-4 ps-5">
                     <div class="col">
                       <p class="piePagina">VIAJES CHILE</p>
                     </div>
                     <div class="col-6">
                     </div>
                     <div class="col">
-                      <section class="text-end piePagina ps-5">
+                      <section class="text-end piePagina ps-5 pe-4 fs-4">
                         <i class="fa-brands fa-github"></i>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-twitter-square"></i>
