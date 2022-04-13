@@ -5,16 +5,16 @@
     border:0;
     margin:0;
 }
+
 .barra {
     color: white;
 }
 
 body {
-    font-family: 'cabin', sans-serif;
+    font-family: 'railway', sans-serif;
     scroll-behavior: smooth;
     color: #ffffff;
 }
-
 
 
 

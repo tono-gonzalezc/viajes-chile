@@ -23,24 +23,26 @@
 <body>
     <!--Header, barra de navegaciòn-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top barra">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra">
             <div class="container-fluid text-light">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/viajes.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="assets/img/viajes.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top mx-2">
                     Viajes Chile
                   </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <div>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-end text-light">
 
                   <!--No olvidar ingresar links-->
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link" href="#">Quienes Somos</a>
-                  <a class="nav-link" href="#">Destacados</a>
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link active" href="#">Quienes Somos</a>
+                  <a class="nav-link active" href="#">Destacados</a>
+                  <a class="nav-link active" href="#">Contacto</a>
                 </div>
+              </div>
               </div>
             </div>
           </nav>
@@ -50,7 +52,7 @@
     <main class="bg-dark">
 
         <!-- Carrousel -->
-        <div id="carouselExampleControls" class="container-fluid carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Volcan Parinacota">
@@ -78,7 +80,7 @@
             <!-- Quienes Somos -->
             <h2 class=" text-center">¿QUIENES SOMOS?</h2>
             <hr>
-            <div class="row text-center">
+            <div class="row text-center py-5">
               <div class="col">
                 <div class="bg-info">
                     <i class="fa-solid fa-plane fs-4 py-2"></i>
@@ -89,13 +91,13 @@
                 </section>
               </div>
               <div class="col">
-                <div class="bg-info">
-                    <i class="fa-solid fa-volcano fs-4 py-2"></i>
-                </div>
                 <section class="text-start">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quas sapiente asperiores quisquam dolore eum magnam officiis iusto, quaerat, at laudantium. Pariatur vero quibusdam rem fugit neque quod magnam minus.
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quas sapiente asperiores quisquam dolore eum magnam officiis iusto, quaerat, at laudantium. Pariatur vero quibusdam rem fugit neque quod magnam minus.
                 </section>
+                <div class="bg-info">
+                  <i class="fa-solid fa-volcano fs-4 py-2"></i>
+              </div>
               </div>
               <div class="col">
                 <div class="bg-info">
@@ -109,45 +111,48 @@
             </div>
 
             <!-- Destacados -->
-            <h2 class="text-center">DESTACADOS</h2>
-            <div class="row">
-              <div class="col-sm-12 col-md-3">
-                <div class="card bg-info" style="width: 18rem;">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
-                    <div class="card-body">
-                        <h5 class="card-title">Torres del Paine</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure omnis, molestias quaerat maiores animi modi veritatis numquam voluptatum facilis consectetur accusamus. Ea nobis suscipit debitis voluptatum reiciendis eligendi ut consectetur.</p>
-                    </div>
+            <div class="container">
+              <h2 class="text-center">DESTACADOS</h2>
+              <div class="row py-5">
+                <div class="col-sm-12 col-md-3">
+                  <div class="card bg-info">
+                      <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
+                      <div class="card-body">
+                          <h5 class="card-title">Torres del Paine</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure omnis, molestias quaerat maiores animi modi veritatis numquam voluptatum facilis consectetur accusamus. Ea nobis suscipit debitis voluptatum reiciendis eligendi ut consectetur.</p>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-3">
-                <div class="card bg-info" style="width: 18rem;">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="Norte de Chile">
-                    <div class="card-body">
-                        <h5 class="card-title">Norte de Chile</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid, officiis obcaecati impedit laudantium facilis error ut deleniti, totam sapiente maiores maxime officia corrupti nisi quaerat modi eum accusamus explicabo.</p>
-                    </div>
+                <div class="col-sm-12 col-md-3">
+                  <div class="card bg-info">
+                      <img src="assets/img/card2.jpg" class="card-img-top" alt="Norte de Chile">
+                      <div class="card-body">
+                          <h5 class="card-title">Norte de Chile</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid, aati impedit laudantium facilis error ut deleniti, totam sapiente maiores maxime officia corrupti nisi quaerat modi eum accusamus explicabo.</p>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-3">
-                <div class="card bg-info" style="width: 18rem;">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Reserva Nacional Los Flamencos">
-                    <div class="card-body">
-                        <h5 class="card-title">RN Los Flamencos</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui mollitia corrupti nobis esse, dignissimos optio debitis ipsam facere explicabo! Delectus corrupti consectetur magnam doloribus itaque accusantium, hic animi similique!</p>
-                    </div>
+                <div class="col-sm-12 col-md-3">
+                  <div class="card bg-info">
+                      <img src="assets/img/card3.jpg" class="card-img-top" alt="Reserva Nacional Los Flamencos">
+                      <div class="card-body">
+                          <h5 class="card-title">RN Los Flamencos</h5>
+                          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat qui mollitia corrupti nobis esse, dignissimos optio debitis ipsam facere explicabo! Delectus corrupti consectetur magnam doloribus itaque accusantium, hic animi similique!</p>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-3">
-                <div class="card bg-info" style="width: 18rem;">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Sur de Chile">
-                    <div class="card-body">
-                        <h5 class="card-title">Sur de Chile</h5>
-                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio architecto aspernatur dicta, nesciunt nemo aliquid repellendus provident veniam inventore ipsam accusantium rem, suscipit assumenda in praesentium odit fuga harum sed.</p>
-                    </div>
+                <div class="col-sm-12 col-md-3">
+                  <div class="card bg-info">
+                      <img src="assets/img/card4.jpg" class="card-img-top" alt="Sur de Chile">
+                      <div class="card-body">
+                          <h5 class="card-title">Sur de Chile</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio architecto aspernatur dicta, nesciunt nemo aliquid repellendus provident veniam inventore ipsam accusantium rem, suscipit assumenda in praesentium odit fuga harum sed.</p>
+                      </div>
+                  </div>
                 </div>
+  
               </div>
-
+  
             </div>
 
             <!-- Contacto -->
@@ -173,8 +178,8 @@
     </main>
 
     <!--Footer-->
-    <footer class="bg-warning container text-light px-5 py-4">
- 
+    <footer class="bg-info text-light px-5 py-4">
+<!-- 
                 <p class="piePagina">VIAJES CHILE</p>
                 <section class="text-end piePagina ps-5">
                     <i class="fa-brands fa-github"></i>
@@ -182,8 +187,24 @@
                     <i class="fa-brands fa-twitter-square"></i>
                     <i class="fa-brands fa-facebook-square"></i>
                 </section>
-
-
+-->
+                <div class="container">
+                  <div class="row px-4">
+                    <div class="col">
+                      <p class="piePagina">VIAJES CHILE</p>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col">
+                      <section class="text-end piePagina ps-5">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-facebook-square"></i>
+                      </section>
+                    </div>
+                  </div>
+                </div>
 
     </footer>
    
